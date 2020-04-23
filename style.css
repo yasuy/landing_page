@@ -1,0 +1,257 @@
+html {
+  font-family: 'Permanent Marker', 'Nunito', cursive, sans-serif;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  background-color: #fef4f4;
+  scroll-behavior: smooth;
+}
+
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+#nav-wrapper {
+  height: 60px;
+  background: #64BCFC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+#nav-open {
+  display: none;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  position: relative;
+}
+
+#nav-open span, #nav-open span:before, #nav-open span:after {
+  position: absolute;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background: #555;
+  display: block;
+  content: '';
+  cursor: pointer;
+}
+
+#nav-open span:before {
+  bottom: -8px;
+}
+
+#nav-open span:after {
+  bottom: -16px;
+}
+
+#header-img {
+  width: auto;
+  height: 50%;
+}
+
+#nav-bar {
+  line-height: 60px;
+  margin-right: 40px;
+  margin-left: auto;
+}
+
+.nav-link:not(last-child) {
+  margin-right: 40px;
+  text-decoration: none;
+  font-family: Nunito;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+  opacity: .8;
+}
+
+#header-main-image {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+#form-container {
+  width: 70%;
+  margin: 50px auto;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form input {
+  display: block;
+  width: 400px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+form > #email {
+  border-radius: 4px;
+  border: 1px solid #000;
+  padding: 5px 10px;
+  opacity: 0.5;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+form > #email:focus {
+  opacity: 1;
+  border: 1px solid #0068b7;
+}
+
+form > #submit {
+  border-radius: 4px;
+  border: 1px solid #68C5F3;
+  background-color: #68C5F3;
+  padding: 5px 10px;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+form > #submit:hover {
+  cursor: pointer;
+  opacity: 1;
+  border: 1px solid #0068b7;
+  font-weight: bold;
+}
+
+#fearures {
+  font-family: sans-serif;
+  width: 70%;
+  margin: 50px auto;
+}
+
+#fearures #material, #fearures #shipping, #fearures #assurance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#fearures .fas {
+  font-size: 60px;
+  color: #003f8e;
+}
+
+#fearures .fearures-content {
+  text-align: left;
+  padding: 10px 10px 10px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#fearures .fearures-h2 {
+  margin-bottom: 5px;
+}
+
+#how-it-works {
+  width: 70%;
+  margin: 50px auto;
+}
+
+#how-it-works #video {
+  width: 854px;
+  height: 480px;
+}
+
+#pricing-cards {
+  font-family: sans-serif;
+  width: 70%;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#pricing-cards .pricing-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #68C5F3;
+}
+
+#pricing-cards .pricing-card .card-header {
+  width: 100%;
+  background-color: #454545;
+  color: #fff;
+  padding: 10px 0 10px 0;
+  text-transform: uppercase;
+}
+
+#pricing-cards .pricing-card .card-price {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px auto;
+}
+
+#pricing-cards .pricing-card .card-description {
+  margin: 10px auto;
+}
+
+footer {
+  height: 30px;
+  background-color: #DFDFDF;
+}
+
+footer > p {
+  line-height: 30px;
+  color: #fff;
+  font-family: serif;
+}
+
+@media (max-width: 767px) {
+  .nav-link {
+    display: none;
+  }
+  #nav-open {
+    display: inline-block;
+  }
+}
+/*# sourceMappingURL=style.css.map */
